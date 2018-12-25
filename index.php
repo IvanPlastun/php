@@ -24,6 +24,7 @@
     }
     echo "</ul>";
 
+    //Ассоциативный массив
     echo "<h2>Ассоциативный массив</h2>";
     $books = array(
         "Рей Брэдбери" => "451° по Фаренгейту", 
@@ -46,4 +47,46 @@
         echo "<li>$bookAuthor: $bookName</li>";
     }
     echo "</ul>";
+
+
+    //Функции
+    echo "<h2>Функции</h2>";
+    function greeting($userName = "пользователь", $dayNumber) {
+        $message = '';
+        switch($dayNumber) {
+            case 1: 
+                $message = "<p>Привет <b>$userName!</b> Хорошего и продуктивного рабочего дня!</p>";
+                echo $message;
+            break;
+            case 2: 
+                $message = "<p>Привет <b>$userName!</b> Хорошего и продуктивного рабочего дня!</p>";
+                echo $message;
+            break;
+            case 3: 
+                $message = "<p>Привет <b>$userName!</b> Хорошего и продуктивного рабочего дня!</p>";
+                echo $message;
+            break;
+            case 4: 
+                $message = "<p>Привет <b>$userName!</b> Хорошего и продуктивного рабочего дня!</p>";
+                echo $message;
+            break;
+            case 5: 
+                $message = "<p>Привет <b>$userName!</b> Хорошего и продуктивного рабочего дня!</p>";
+                echo $message;
+            break;
+            case 6:
+                $message = "<p>Привет <b>$userName!</b> Желаю вам хорошо отдохнуть в этот день!</p>";
+                echo $message;
+            break;
+            case 7:
+                $message = "<p>Привет <b>$userName!</b> Желаю вам хорошо отдохнуть в этот день!</p>";
+                echo $message;
+            break;
+            default: 
+                $message = "<p>Нет такого дня недели</p>";
+                echo $message;
+            break;
+        }
+    }
+    greeting('Ivan', 3);
 ?>
